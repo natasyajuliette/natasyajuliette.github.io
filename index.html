@@ -1,12 +1,14 @@
-<!DOCTYPE html>
+portofolioModal2<!DOCTYPE html>
 <html lang="en" >
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Portofolio</title>
-  <link rel = "stylesheet"
-  type = "text/css"
-  href = "style.css" />
+  <link rel = "stylesheet" type = "text/css" href = "style.css" />
+  <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
   @import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 </style>
@@ -16,9 +18,34 @@
 </head>
 
 <body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Natasya Juliette's Portofolio</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
 
   <header>
-    <div class="intro">
+    <div id="about" class="intro">
       <h1>Natasya Juliette</h1>
       <h2>Computer Programmer</h2>
     </header>
@@ -35,7 +62,7 @@
         </div>
       </section>
 
-      <h3>my work.</h3>
+      <h3 id="work">my work.</h3>
       <section class="work">
         <div class="image-area left">
           <img src="img/drunk-duck.png"/>
@@ -44,8 +71,32 @@
           <div class="text-box-content">
             <h3>Drunk Duck Game</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="#" target="_blank" class="button">view project</a>
+            <button type="button"  class="button" data-toggle="modal" data-target="#portfolioModal1">view project</button>
           </div>
+
+          <div class="modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="modal-title" id="modalTitle">Drunk Duck Game</h2>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <img class="img-fluid d-block mx-auto" src="img/drunk-duck.png" alt="">
+                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <ul class="list-inline">
+                    <li>Date: January 2017</li>
+                    <li>Client: Finish</li>
+                    <li>Category: Identity</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
 
@@ -57,8 +108,32 @@
           <div class="text-box-content">
             <h3>Drunk Duck Game</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="#" target="_blank" class="button">view project</a>
+            <button type="button"  class="button" data-toggle="modal" data-target="#portofolioModal2">view project</button>
           </div>
+
+          <div class="modal fade" id="portofolioModal2" tabindex="-1" role="dialog" aria-labelledby="portofolioModal2" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="modal-title" id="modalTitle">Drunk Duck Game</h2>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <img class="img-fluid d-block mx-auto" src="img/drunk-duck.png" alt="">
+                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <ul class="list-inline">
+                    <li>Date: January 2017</li>
+                    <li>Client: Finish</li>
+                    <li>Category: Identity</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
 
@@ -70,8 +145,32 @@
           <div class="text-box-content">
             <h3>Drunk Duck Game</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="#" target="_blank" class="button">view project</a>
+            <button type="button"  class="button" data-toggle="modal" data-target="#portofolioModal3">view project</button>
           </div>
+
+          <div class="modal fade" id="portofolioModal3" tabindex="-1" role="dialog" aria-labelledby="portofolioModal3" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="modal-title" id="modalTitle">Drunk Duck Game</h2>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <img class="img-fluid d-block mx-auto" src="img/drunk-duck.png" alt="">
+                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <ul class="list-inline">
+                    <li>Date: January 2017</li>
+                    <li>Client: Finish</li>
+                    <li>Category: Identity</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
 
@@ -83,8 +182,32 @@
           <div class="text-box-content">
             <h3>Drunk Duck Game</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="#" target="_blank" class="button">view project</a>
+            <button type="button"  class="button" data-toggle="modal" data-target="#portofolioModal4">view project</button>
           </div>
+
+          <div class="modal fade" id="portofolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="modal-title" id="modalTitle">Drunk Duck Game</h2>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <img class="img-fluid d-block mx-auto" src="img/drunk-duck.png" alt="">
+                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <ul class="list-inline">
+                    <li>Date: January 2017</li>
+                    <li>Client: Finish</li>
+                    <li>Category: Identity</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
 
@@ -96,13 +219,39 @@
           <div class="text-box-content">
             <h3>Drunk Duck Game</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="#" target="_blank" class="button">view project</a>
+            <button type="button"  class="button" data-toggle="modal" data-target="#portfolioModal5">view project</button>
           </div>
+
+          <div class="modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-labelledby="portfolioModal5" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="modal-title" id="modalTitle">Drunk Duck Game</h2>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <img class="img-fluid d-block mx-auto" src="img/drunk-duck.png" alt="">
+                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <ul class="list-inline">
+                    <li>Date: January 2017</li>
+                    <li>Client: Finish</li>
+                    <li>Category: Identity</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
+
+
     </div>
 
-    <section class="contact">
+    <section id="contact" class="contact">
       <div class="contact-content">
         <h4>Have a project in mind? Email me: <a class="email" href="mailto:natasya.scirome@gmail.com">natasya.scirome@gmail.com</a></h4>
       </div>
@@ -125,4 +274,96 @@
 
   </body>
 
-  </html>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script></body>
+  <script>
+  $(document).ready(function() {
+    function filterPath(string) {
+      return string
+      .replace(/^\//,'')
+      .replace(/(index|default).[a-zA-Z]{3,4}$/,'')
+      .replace(/\/$/,'');
+    }
+    var locationPath = filterPath(location.pathname);
+    var scrollElem = scrollableElement('html', 'body');
+
+    $('.nav li a').each(function() {
+      var thisPath = filterPath(this.pathname) || locationPath;
+      if (  locationPath == thisPath
+        && (location.hostname == this.hostname || !this.hostname)
+        && this.hash.replace(/#/,'') ) {
+          var $target = $(this.hash), target = this.hash;
+          if (target) {
+            var targetOffset = $target.offset().top;
+            $(this).click(function(event) {
+              event.preventDefault();
+              $(scrollElem).animate({scrollTop: targetOffset}, 500, function() {
+                location.hash = target;
+              });
+            });
+          }
+        }
+      });
+
+      // use the first element that is "scrollable"
+      function scrollableElement(els) {
+        for (var i = 0, argLength = arguments.length; i <argLength; i++) {
+          var el = arguments[i],
+          $scrollElement = $(el);
+          if ($scrollElement.scrollTop()> 0) {
+            return el;
+          } else {
+            $scrollElement.scrollTop(1);
+            var isScrollable = $scrollElement.scrollTop()> 0;
+            $scrollElement.scrollTop(0);
+            if (isScrollable) {
+              return el;
+            }
+          }
+        }
+        return [];
+      }
+
+    });
+    </script>
+
+    <script>
+    function popupOpenClose(popup) {
+
+      /* Add div inside popup for layout if one doesn't exist */
+      if ($(".wrapper", popup).length == 0) {
+        $(popup).wrapInner("<div class='wrapper'></div>");
+      }
+
+      /* Open popup */
+      $(popup).show();
+
+      /* Close popup if user clicks on background */
+      $(popup).click(function(e) {
+        if (e.target == this) {
+          if ($(popup).is(':visible')) {
+            $(popup).hide();
+          }
+        }
+      });
+
+      /* Close popup and remove errors if user clicks on cancel or close buttons */
+      $(popup).find(".popup-btn-close").on("click", function() {
+        if ($(".formElementError").is(':visible')) {
+          $(".formElementError").remove();
+        }
+        $(popup).hide();
+      });
+    }
+
+    $(document).ready(function() {
+      $(".button").on("click", function() {
+        var target = $(this).data('target');
+        popupOpenClose($(target));
+      });
+    });
+
+    
+    </script>
+    </html>
