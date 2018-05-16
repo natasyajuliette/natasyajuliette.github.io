@@ -1,3 +1,2 @@
-A Pen created at CodePen.io. You can find this one at https://codepen.io/natasyajuliette/pen/odPMBq.
-
+A Webite I created with Bootstrap Components and Javascript as well as HTML and CSS to design the portfolio website
  
