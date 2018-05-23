@@ -149,6 +149,11 @@ header {
   text-align: justify;
 }
 
+.about p span {
+	font-style: italic;
+	font-size: 1.27em;
+	font-weight: 500;
+}
 .about-content h3 {
 	text-align: center;
 }
@@ -184,6 +189,7 @@ header {
   color: #616569;
   letter-spacing: 0.03em;
   font-size: 1em;
+	text-align: justify;
 }
 
 button {
@@ -236,6 +242,7 @@ button:hover {
   margin-top: 5%;
   margin-bottom: 30px;
   color: #616569;
+	text-align: justify;
 }
 
  .modal-content p.item-intro {
@@ -248,6 +255,7 @@ button:hover {
 .portfolio-modal .modal-content ul.list-inline {
   margin-top: 0;
   margin-bottom: 30px;
+	line-height: normal;
 }
 
 .portfolio-modal .modal-content img {
@@ -275,7 +283,7 @@ button:hover {
 .image-area {
   width: 480px;
   height: 300px;
-  overflow: hidden;
+	overflow: scroll;
 }
 
 .left {
