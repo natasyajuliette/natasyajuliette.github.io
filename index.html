@@ -55,224 +55,190 @@
     <section class="about">
       <div class="about-content">
         <h3>Hi, I'm Natasya Juliette</h3>
-        <p>I am an aspiring Computer Programmer based in Seattle, Washington and Jakarta,
-          Indonesia with special interest in Software engineering using <span>React.js, HTML, CSS,
+        <p>I am an aspiring and passionate Computer Programmer in in Seattle, Washington that comes from Jakarta,
+          Indonesia with special interest in Software Engineering using <span>React.js, HTML, CSS,
             C#, and Java</span>. I earned my Associate Degree in Science at North Seattle College.
             Now, I go to University of Washington, Seattle pursuing BS in Computer Science.</p>
           </div>
         </section>
 
         <h3 id="work">my work.</h3>
+
         <section class="work">
           <div class="image-area left">
-            <img src="img/therejectedbot.png"/>
+            <img src="img/reimburse.png"/>
           </div>
           <div class="text-box">
             <div class="text-box-content">
-              <h3>Therejectedbot Telegram bot</h3>
-              <p>A telegram bot using Python that allows users to get the information of weekly
-                service and the people who serve in a specific week at Christ
-                the Cornerstone Church, Seattle, WA, United States.</p>
-                <button type="button"  class="button" data-toggle="modal" data-target="#portofolioModal3">view project</button>
+              <h3>Reimbursement Application</h3>
+              <p>Web-application that handles Christ the Cornerstone's reimbursement requests and approvals</p>
+                <button type="button"  class="button" data-toggle="modal" data-target="#portfolioModal1">view project</button>
               </div>
 
-              <div class="modal fade" id="portofolioModal3" tabindex="-1" role="dialog" aria-labelledby="portofolioModal3" aria-hidden="true">
+              <div class="modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h2 class="modal-title" id="modalTitle">Therejectedbot</h2>
+                      <h2 class="modal-title" id="modalTitle">Reimbursement Application</h2>
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                       </button>
                     </div>
                     <div class="modal-body">
-                      <p class="item-intro text-muted">A telegram bot to retrieve weekly schedule of Christ the Cornerstone Church Service</p>
-                      <img class="img-fluid d-block mx-auto" src="img/therejectedbot.png" alt="">
-                      <p>A telegram bot that allows the user (congregation) to retrieve
-                        information of weekly service at Christ the Cornerstone Church,
-                        Seattle, Washington, United States, and the people who serve by typing
-                        specific keywords.</p>
-                        <p>/schedule to retrieve that week schedule </p>
-                        <p>/schedule mm/dd/yyyy or mm/dd to retrieve that week schedule to the nearest
-                          Sunday specified by the date.</p>
-                          <p>/schedule #weeknumber to retrieve that week schedule by the number
-                            of week specified.</p>
-                            <p>/help to provide a list of features of therejectedbot Telegram bot</p>
-                            <p>The bot is written in Python and the database is stored in Google Sheet and
-                              accessed using Python. It is developed by the Christ the Cornerstone
-                              Church Computer Programmers. I am one of the church programmers and
-                              added the /schedule mm/dd feature, /schedule #weeknumber, and /help
-                              feature. </p>
-                              <ul class="list-inline">
-                                <li>Date: September 2017</li>
-                                <li>Gitlab: <a href="https://gitlab.com/cornerstonedev/therejectedbot">therejectedbot-git</a></li>
-                                <li>Link: <a href="https://telegram.me/theRejectedBot">therejectedbot</a></li>
-                              </ul>
-                            </div>
-                          </div>
+                      <p class="item-intro text-muted">Web-application that handles reimbursement requests and approvals at Christ the Cornerstone Church, Seattle, WA</p>
+                      <img class="img-fluid d-block mx-auto" src="img/reimburse.png" alt="">
+                      <p>A web application that utilizes REST API methods from church directory and reimbursement report microservices to retrieve church's members
+                         contact infomation for the user authentication and submission details and to store and update the church's reimbursement submission.</p>
+                      <p>It consists of a form page to submit reimbursement requests and a dashboard page that show tables of reimbursement report submitted.
+                         The reimbursement form executes validation for each input that the submitter put in each label and also to check if the form is complete. The dashboard
+                         table shows tables of the user's reimbursement submission and if the user is an approver, shows tables of reimbursement reports submitted to the user to be reviewed. </p>
+                        <p>I was in charge of implementing the REST API methods for the church’s directory and reimbursement report microservices using .Net Core SDK and C#
+                          and developing the church’s reimbursement form validation and report table using React, HTML, and CSS</p>
+                          <ul class="list-inline">
+                            <li>Date: July - September 2018</li>
+                            <li>Gitlab-1: <a href="https://gitlab.com/cccdev/reimbursement-form">reimbursement-form-git</a> </li>
+                            <li>Gitlab-2: <a href="https://gitlab.com/cccdev/expense-report">reimbursement-report-git</a> </li>
+                            <li>Gitlab-3: <a href="https://gitlab.com/cccdev/cccdirectory">church-directory-git</a> </li>
+                            <li>Demo: <a href="https://www.youtube.com/watch?v=n5uqw-sP2uA&feature=youtu.be">demo-video</a> </li>
+                            <li>Link: <a href="http://reimburse.therejecteddev.org/">ccc-reimburse</a> </li>
+                          </ul>
                         </div>
                       </div>
-
                     </div>
-                  </section>
-                  <section class="work">
-                    <div class="image-area right">
-                      <img src="img/lentDevotional.png"/>
-                    </div>
-                    <div class="text-box">
-                      <div class="text-box-content">
-                        <h3>Web-scraping Lent Devotional Project</h3>
-                        <p>Web-scraping project to provide weekly lent devotionals for the
-                          Christ the Cornerstone congregation during lent using Python </p>
-                          <button type="button"  class="button" data-toggle="modal" data-target="#portofolioModal4">view project</button>
-                        </div>
+                  </div>
 
-                        <div class="modal fade" id="portofolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4" aria-hidden="true">
-                          <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h2 class="modal-title" id="modalTitle">Web-Scraping Lent Devotional</h2>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                                </button>
-                              </div>
-                              <div class="modal-body">
-                                <p class="item-intro text-muted">Scraped text content from the Website with multiple URLs into readable PDF files</p>
-                                <img class="img-fluid d-block mx-auto" src="img/lentDevotional.png" alt="">
-                                <p>The code automates turning all the links from <a href="https://www.redeemer.com/learn/resources_by_topic/lenten_devotionals">Reedemer.org page</a>
-                                  for 40-days devotionals into 40 devotional PDF files using Python (BeautifulSoup as Python package),
-                                  and edit the layout of the files using CSS.</p>
-                                  <ul class="list-inline">
-                                    <li>Date: January 2018</li>
-                                    <li>Gitlab: <a href="https://gitlab.com/cornerstonedev/downloadLentDevotions2018/blob/master/downloadLentDayX.py">devotionalLent-git</a></li>
-                                  </ul>
-                                </div>
+                </div>
+              </section>
+
+
+              <section class="work">
+                <div class="image-area right">
+                  <img src="img/drunk-duck.png"/>
+                </div>
+                <div class="text-box">
+                  <div class="text-box-content">
+                    <h3>Drunk Duck Game</h3>
+                    <p>A 2D arcade game created using Unity as the game platform and
+                      C# as the programming languange as a team in North Seattle College Computer
+                      Science Club Winter 2018 as the President of the Club.</p>
+                      <button type="button"  class="button" data-toggle="modal" data-target="#portfolioModal2">view project</button>
+                    </div>
+
+                    <div class="modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h2 class="modal-title" id="modalTitle">Drunk Duck Game</h2>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <p class="item-intro text-muted">Computer Science Club Game Project Winter 2018</p>
+                            <img class="img-fluid d-block mx-auto" src="img/drunk-duck.png" alt="">
+                            <p>A 2D arcade game created using Unity as the game platform and
+                              C# as the programming language. This is a game about a duck trying
+                              to jump as high as possible using platform to reach the sky. The
+                              game continues until you get hit by raining crocodile or fall from
+                              the platform. </p>
+                              <p>I was in charge of developing the scoring system and how it
+                                increments each time the duck hits the jumping platform.</p>
+                                <ul class="list-inline">
+                                  <li>Date: February - March 2018</li>
+                                  <li>Github: <a href="https://github.com/NorthSeattleCSClub/Drunk-Duck">drunk-duck-git</a></li>
+                                  <li>Link: <a href="https://natasyajuliette.itch.io/drunk-duck">drunk-duck-game</a> </li>
+                                </ul>
                               </div>
                             </div>
                           </div>
-
-                        </div>
-                      </section>
-
-                  <section class="work">
-                    <div class="image-area left">
-                      <img src="img/drunk-duck.png"/>
-                    </div>
-                    <div class="text-box">
-                      <div class="text-box-content">
-                        <h3>Drunk Duck Game</h3>
-                        <p>A 2D arcade game created using Unity as the game platform and
-                          C# as the programming languange as a team in North Seattle College Computer
-                          Science Club Winter 2018 as the President of the Club.</p>
-                          <button type="button"  class="button" data-toggle="modal" data-target="#portfolioModal1">view project</button>
                         </div>
 
-                        <div class="modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1" aria-hidden="true">
-                          <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h2 class="modal-title" id="modalTitle">Drunk Duck Game</h2>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                                </button>
-                              </div>
-                              <div class="modal-body">
-                                <p class="item-intro text-muted">Computer Science Club Game Project Winter 2018</p>
-                                <img class="img-fluid d-block mx-auto" src="img/drunk-duck.png" alt="">
-                                <p>A 2D arcade game created using Unity as the game platform and
-                                  C# as the programming language. This is a game about a duck trying
-                                  to jump as high as possible using platform to reach the sky. The
-                                  game continues until you get hit by raining crocodile or fall from
-                                  the platform. </p>
-                                  <p>I was in charge of developing the scoring system and how it
-                                  increments each time the duck hits the jumping platform.</p>
-                                  <ul class="list-inline">
-                                    <li>Date: February - March 2018</li>
-                                    <li>Github: <a href="https://github.com/NorthSeattleCSClub/Drunk-Duck">drunk-duck-git</a></li>
-                                    <li>Link: <a href="https://natasyajuliette.itch.io/drunk-duck">drunk-duck-game</a> </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
+                      </div>
+                    </section>
+
+
+                    <section class="work">
+                      <div class="image-area left">
+                        <img src="img/therejectedbot.png"/>
+                      </div>
+                      <div class="text-box">
+                        <div class="text-box-content">
+                          <h3>The Rejected bot</h3>
+                          <p>A telegram bot using Python that allows users to get the information of weekly
+                            service and the people who serve in a specific week at Christ
+                            the Cornerstone Church, Seattle, WA, United States.</p>
+                            <button type="button"  class="button" data-toggle="modal" data-target="#portofolioModal3">view project</button>
                           </div>
 
-                        </div>
-                      </section>
-
-                      <section class="work">
-                        <div class="image-area right">
-                          <img src="img/Serverless-notes.png"/>
-                        </div>
-                        <div class="text-box">
-                          <div class="text-box-content">
-                            <h3>Scratch</h3>
-                            <p>A note taking app developed using AWS, React.js, and Serverless Framework
-                              that allows users to take notes online and access it anytime and anywhere</p>
-                              <button type="button"  class="button" data-toggle="modal" data-target="#portofolioModal2">view project</button>
-                            </div>
-
-                            <div class="modal fade" id="portofolioModal2" tabindex="-1" role="dialog" aria-labelledby="portofolioModal2" aria-hidden="true">
-                              <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <h2 class="modal-title" id="modalTitle">Scratch</h2>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                      <span aria-hidden="true">&times;</span>
-                                    </button>
-                                  </div>
-                                  <div class="modal-body">
-                                    <p class="item-intro text-muted">A simple note taking app project to learn Serverless Framework</p>
-                                    <img class="img-fluid d-block mx-auto" src="img/Serverless-notes.png" alt="">
-                                    <p>A web application created using AWS, React.js, and Serverless
-                                      Framework. The application allows you to take your notes online
-                                      without worrying taking storage in your device. The data is
-                                      stored using AWS Dynamo DB and authentication is executed using
-                                      AWS Cognito. The design is made using React and Bootstrap.
-                                      The application is in progress and is targeted to finish by July. </p>
-                                      <ul class="list-inline">
-                                        <li>Date: March 2018 - now</li>
-                                        <li>Github: <a href="https://github.com/natasyajuliette/Serverless-Notes-App">serverless-notes-git</a></li>
-                                      </ul>
+                          <div class="modal fade" id="portofolioModal3" tabindex="-1" role="dialog" aria-labelledby="portofolioModal3" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h2 class="modal-title" id="modalTitle">Therejectedbot</h2>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  <p class="item-intro text-muted">A telegram bot to retrieve weekly schedule of Christ the Cornerstone Church Service</p>
+                                  <img class="img-fluid d-block mx-auto" src="img/therejectedbot.png" alt="">
+                                  <p>A telegram bot that allows the user (congregation) to retrieve
+                                    information of weekly service at Christ the Cornerstone Church,
+                                    Seattle, Washington, United States, and the people who serve by typing
+                                    specific keywords.</p>
+                                    <p>/schedule to retrieve that week schedule </p>
+                                    <p>/schedule mm/dd/yyyy or mm/dd to retrieve that week schedule to the nearest
+                                      Sunday specified by the date.</p>
+                                      <p>/schedule #weeknumber to retrieve that week schedule by the number
+                                        of week specified.</p>
+                                        <p>/help to provide a list of features of therejectedbot Telegram bot</p>
+                                        <p>The bot is written in Python and the database is stored in Google Sheet and
+                                          accessed using Python. It is developed by the Christ the Cornerstone
+                                          Church Computer Programmers. I am one of the church programmers and
+                                          added the /schedule mm/dd feature, /schedule #weeknumber, and /help
+                                          feature. </p>
+                                          <ul class="list-inline">
+                                            <li>Date: September 2017</li>
+                                            <li>Gitlab: <a href="https://gitlab.com/cornerstonedev/therejectedbot">therejectedbot-git</a></li>
+                                            <li>Link: <a href="https://telegram.me/theRejectedBot">therejectedbot</a></li>
+                                          </ul>
+                                        </div>
+                                      </div>
                                     </div>
                                   </div>
+
                                 </div>
-                              </div>
-
-                            </div>
-                          </section>
-
+                              </section>
                               <section class="work">
-                                <div class="image-area left">
-                                  <img src="img/in-progress.jpg"/>
+                                <div class="image-area right">
+                                  <img src="img/lentDevotional.png"/>
                                 </div>
                                 <div class="text-box">
                                   <div class="text-box-content">
-                                    <h3>North Seattle College Computer Science Club Website</h3>
-                                    <p>An interactive website for NSC Computer Science Club to help provide information
-                                      and easen the process of announcement and joining using Javascript, HTML, CSS
-                                      NSC CS Club Spring 2018 Project</p>
-                                      <button type="button"  class="button" data-toggle="modal" data-target="#portfolioModal5">view project</button>
+                                    <h3>Web-scraping Lent Devotional Project</h3>
+                                    <p>Web-scraping project to provide weekly lent devotionals for the
+                                      Christ the Cornerstone congregation during lent using Python </p>
+                                      <button type="button"  class="button" data-toggle="modal" data-target="#portofolioModal4">view project</button>
                                     </div>
 
-                                    <div class="modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-labelledby="portfolioModal5" aria-hidden="true">
+                                    <div class="modal fade" id="portofolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4" aria-hidden="true">
                                       <div class="modal-dialog" role="document">
                                         <div class="modal-content">
                                           <div class="modal-header">
-                                            <h2 class="modal-title" id="modalTitle">NSC Computer Science Club Website</h2>
+                                            <h2 class="modal-title" id="modalTitle">Web-Scraping Lent Devotional</h2>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                               <span aria-hidden="true">&times;</span>
                                             </button>
                                           </div>
                                           <div class="modal-body">
-                                            <p class="item-intro text-muted">Website Development Project NSC CSC Club Spring 2018</p>
-                                            <img class="img-fluid d-block mx-auto" src="img/in-progress.jpg" alt="">
-                                            <p>A interactive website for North Seattle College Computer Science Club
-                                              created using Javascript, HTML, and CSS as one of the CS Club projects Spring 2018.
-                                              It is created to provide information regarding the club members, events,
-                                              and projects. Jeremy Lee and I design the website from scratch.</p>
+                                            <p class="item-intro text-muted">Scraped text content from the Website with multiple URLs into readable PDF files</p>
+                                            <img class="img-fluid d-block mx-auto" src="img/lentDevotional.png" alt="">
+                                            <p>The code automates turning all the links from <a href="https://www.redeemer.com/learn/resources_by_topic/lenten_devotionals">Reedemer.org page</a>
+                                              for 40-days devotionals into 40 devotional PDF files using Python (BeautifulSoup as Python package),
+                                              and edit the layout of the files using CSS.</p>
                                               <ul class="list-inline">
-                                                <li>Date: May 2018 - now</li>
-                                                <li>Github: <a href="https://github.com/natasyajuliette/computerscienceclubwebsite">nsccsc-website</a></li>
+                                                <li>Date: January 2018</li>
+                                                <li>Gitlab: <a href="https://gitlab.com/cornerstonedev/downloadLentDevotions2018/blob/master/downloadLentDayX.py">devotionalLent-git</a></li>
                                               </ul>
                                             </div>
                                           </div>
@@ -281,7 +247,6 @@
 
                                     </div>
                                   </section>
-
 
                                 </div>
 
